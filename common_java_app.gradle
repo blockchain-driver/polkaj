@@ -17,6 +17,11 @@ tasks.withType(JavaCompile) {
     options.debug = true
 }
 
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(11)
+    }
+}
 compileJava {
     targetCompatibility = '8'
     sourceCompatibility = '8'
